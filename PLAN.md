@@ -35,6 +35,8 @@ Check these at `https://<gitlab>/help/instance_configuration` or ask the GitLab 
 
 ## 2. GitLab layout and access
 
+Step-by-step UI walkthrough: [GITLAB-SETUP.md](./GITLAB-SETUP.md).
+
 ```
 <project>/                          top group
 ├── shared/                         core-developers: Developer   item-developers: Developer
