@@ -1,0 +1,3 @@
+# The kernel repos stay on Gerrit, synced via a second Manifest remote
+
+The per-AP kernel repos are about 100 GB each, mostly binaries committed on purpose, and change rarely. Moving them to GitLab means rewriting history into LFS and running a push that may hit instance limits, for little gain. For now they stay on the existing Gerrit server. This is temporary: the kernel moves to GitLab later as a separate project (fresh-history import, binaries in LFS), once the instance limits are known. The Core developers' Manifest declares Gerrit as a second `<remote>` and lists the kernel projects against it, so `repo sync` still produces a complete Workspace. Kernel changes keep the Gerrit review flow. This is the only exception to ADR 0002.
